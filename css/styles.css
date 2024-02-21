@@ -1,5 +1,5 @@
 body {
-    font-family: "Roboto", "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #ffffff;
     font-weight: 400;
@@ -16,72 +16,85 @@ a {
     color: #2e2f42;
 }
 
-.navigation-list a {
+address {
+    font-style: normal;
+}
+
+.navigation-list .nav-link {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.address a {
+.address .address-link {
     line-height: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    font-style: normal;
+    color: #434455;
 }
 
-a:hover, a:active{
-    color: #404BBF;
+a:hover,
+a:active,
+a:focus {
+    color: #404bbf;
 }
 
-.main-title, .footer {
+.main-section,
+.footer {
     background-color: #2e2f42;
 }
 
 .logo {
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-}
-
-span {
     color: #4d5ae5;
 }
 
-.main-title h1 {
+.logo span {
+    color: #2e2f42;
+}
+
+.main-section .main-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #ffffff;
 }
 
-.main-title button {
+.main-section .main-btn {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
     background: #4d5ae5;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
 }
 
-.main-title button:hover, .main-title button:active{
-    background-color: #404BBF;
+.main-section .main-btn:hover,
+.main-section .main-btn:active,
+.main-section .main-btn:focus {
+    background-color: #404bbf;
 }
 
-.main-subtitle{
+.main-subtitle {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
 }
 
-.subtitle{
+.subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -89,25 +102,26 @@ span {
     color: #2e2f42;
 }
 
-.subtext{
+.subtext {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.team .subtitle, .team .subtext{
+.team .subtitle,
+.team .subtext {
     text-align: center;
 }
 
-.team{
+.team {
     background: #f4f4fd;
 }
 
-.conclusion{
+.conclusion {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
 
-.footer .logo{
+.footer .logo span {
     color: #f4f4fd;
 }
