@@ -33,7 +33,7 @@ address {
     color: #434455;
 }
 
-.address, .address-link:hover, .address .address-link:active{
+.address .address-link:hover, .address .address-link:active{
     color: #404bbf;
 }
 
