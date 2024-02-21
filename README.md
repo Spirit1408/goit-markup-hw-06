@@ -1,2 +1,2 @@
-# goit-markup-hw-01
-Project 1 (GI)
+# goit-markup-hw-02
+Homework 2 (GI)
