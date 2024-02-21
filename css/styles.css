@@ -33,7 +33,9 @@ address {
     color: #434455;
 }
 
-.address .address-link:hover, .address .address-link:active{
+.address .address-link:hover,
+.address .address-link:active,
+.address .address-link:focus {
     color: #404bbf;
 }
 
@@ -58,7 +60,7 @@ a:focus {
     color: #4d5ae5;
 }
 
-.logo span {
+.logo .logo-text {
     color: #2e2f42;
 }
 
@@ -120,8 +122,12 @@ a:focus {
     background: #f4f4fd;
 }
 
-.portfolio .portfolio-card{
-    background-color: #FFFFFF;
+.team .team-card {
+    background-color: #ffffff;
+}
+
+.portfolio .portfolio-card {
+    background-color: #ffffff;
 }
 
 .conclusion {
