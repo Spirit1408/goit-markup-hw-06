@@ -33,6 +33,10 @@ address {
     color: #434455;
 }
 
+.address ,.address-link:hover, .address .address-link:active{
+    color: #404bbf;
+}
+
 a:hover,
 a:active,
 a:focus {
@@ -114,6 +118,10 @@ a:focus {
 
 .team {
     background: #f4f4fd;
+}
+
+.portfolio .portfolio-card{
+    background-color: #FFFFFF;
 }
 
 .conclusion {
