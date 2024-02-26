@@ -6,6 +6,12 @@ body {
     font-size: 16px;
 }
 
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
 h1,
 h2,
 h3,
@@ -68,13 +74,6 @@ a:focus {
     color: #404bbf;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 section {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -135,14 +134,11 @@ section {
 }
 
 .visually-hidden {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    text-align: center;
-    color: #2e2f42;
-    display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .subtitle {
@@ -188,8 +184,6 @@ section {
 .header .container {
     display: flex;
     justify-content: space-between;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header .nav {
@@ -204,11 +198,13 @@ section {
 .header .navigation-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .header .address-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .main-section {
@@ -217,6 +213,7 @@ section {
 }
 
 .main-section .main-title {
+    margin: 0 auto;
     max-width: 496px;
 }
 
@@ -227,6 +224,7 @@ section {
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     min-width: 169px;
+    margin: 48px auto 0;
 }
 
 .qualities .visually-hidden {
@@ -240,8 +238,7 @@ section {
 }
 
 .qualities .qualities-item {
-    width: calc((100% - 72px) / 3);
-    gap: 8px;
+    width: calc((100% - 72px) / 4);
 }
 
 .qualities .subtitle {
