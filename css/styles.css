@@ -192,6 +192,7 @@ section {
 .header .container {
     display: flex;
     justify-content: space-between;
+    padding: 24px 0;
 }
 
 .header .nav {
@@ -208,14 +209,11 @@ section {
     gap: 40px;
 }
 
-.header .navigation-item{
-    padding: 24px 0;
-}
+
 
 .header .address-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .main-section {
