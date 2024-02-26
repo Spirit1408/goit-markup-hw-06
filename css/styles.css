@@ -208,7 +208,8 @@ section {
     margin-right: 332px;
 }
 
-.header .navigation-item {
+.header .navigation-item, 
+.header .address-list {
     padding: 24px 0;
 }
 
