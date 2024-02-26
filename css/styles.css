@@ -191,7 +191,6 @@ section {
 
 .header .container {
     display: flex;
-    justify-content: space-between;
 }
 
 .header .nav {
@@ -206,6 +205,7 @@ section {
 .header .navigation-list {
     display: flex;
     gap: 40px;
+    margin-right: 332px;
 }
 
 .header .navigation-item{
