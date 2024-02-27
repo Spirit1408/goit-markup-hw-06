@@ -189,8 +189,9 @@ section {
     color: #f4f4fd;
 }
 
-.header .container {
+.header .header-line {
     display: flex;
+    align-items: center;
 }
 
 .header .nav {
@@ -208,9 +209,10 @@ section {
     margin-right: 332px;
 }
 
-.header .navigation-item, 
-.header .address-list {
-    padding: 24px 0;
+.header .nav-link{
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header .address-list {
