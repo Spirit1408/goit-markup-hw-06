@@ -1,4 +1,5 @@
 {
     "problems.showCurrentInStatus": true,
-    "gremlins.showInProblemPane": true
+    "gremlins.showInProblemPane": true,
+    "workbench.editor.enablePreview": false
 }
