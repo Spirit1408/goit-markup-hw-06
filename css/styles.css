@@ -109,19 +109,16 @@ address {
     justify-content: space-between;
     padding: 72px 16px 40px;
     position: fixed;
-    transform: translateX(100%);
     top: 0;
-    left: 0;
+    right: -100%;
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-window.is-open {
-    transform: translateX(0);
+    transform: translateX(-100%);
 }
 
 .menu-close-btn {
@@ -375,16 +372,14 @@ section {
 .team .team-card {
     background-color: #ffffff;
     margin: 0 auto;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    max-width: 264px;
 }
 
 .team .main-subtitle {
     margin-bottom: 72px;
-}
-
-.team .team-card {
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team .subtitle {
@@ -414,6 +409,7 @@ section {
 }
 
 .portfolio .portfolio-card {
+    margin: 0 auto;
     background-color: #ffffff;
 }
 
@@ -430,6 +426,7 @@ section {
 .portfolio .portfolio-card {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    max-width: 356px;
 }
 
 .portfolio .portfolio-card:hover {
@@ -633,7 +630,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 288px;
-    min-height: 623px;
+    max-width: 408px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -819,5 +816,130 @@ section {
                 rgba(46, 47, 66, 0.7)
             ),
             url("../images/background@2x.jpg");
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-btn,
+    .menu-close-btn,
+    .menu-social-icon-list {
+        display: none;
+    }
+
+    .header .nav {
+        padding: 0px 16px 0px;
+    }
+
+    .menu-window {
+        transform: translateX(0);
+        position: static;
+        max-width: 1158px;
+        max-height: 72px;
+        flex-direction: row;
+        padding: 0;
+        align-items: center;
+    }
+
+    .header .navigation-list {
+        flex-direction: row;
+    }
+
+    .address .address-list {
+        gap: 12px;
+    }
+
+    .header .address-link {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.04em;
+    }
+
+    .navigation-list .nav-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        text-transform: none;
+    }
+
+    .header .logo {
+        margin-right: 120px;
+    }
+
+    .main-section .main-title {
+        font-size: 56px;
+        text-align: center;
+        color: #ffffff;
+        text-transform: none;
+        margin-bottom: 36px;
+        width: 496px;
+    }
+
+    .main-section {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
+    .subtitle {
+        text-align: left;
+    }
+
+    .qualities .qualities-list,
+    .team .team-list,
+    .portfolio .portfolio-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+    }
+
+    .qualities .qualities-list,
+    .portfolio .portfolio-list {
+        row-gap: 72px;
+    }
+
+    .qualities .qualities-item,
+    .team .team-card,
+    .portfolio .portfolio-card {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .team,
+    .footer {
+        padding: 96px 108px;
+    }
+
+    .team .team-list {
+        row-gap: 64px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .footer .conclusion {
+        max-width: 264px;
+    }
+
+    .footer-first-section,
+    .footer-socials,
+    .footer-container,
+    .subscribe {
+        align-items: flex-start;
+    }
+
+    .subscribe-form {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .subscribe-form-field {
+        width: 264px;
     }
 }
