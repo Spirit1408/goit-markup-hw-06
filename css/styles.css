@@ -29,6 +29,13 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+    
+}
+
+.hidden{
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
 }
 
 .icon-item {
@@ -347,6 +354,16 @@ section {
 
 .qualities-icon-container {
     display: none;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background: #f4f4fd;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    margin-bottom: 8px;
 }
 
 .qualities-icon {
@@ -941,5 +958,59 @@ section {
 
     .subscribe-form-field {
         width: 264px;
+    }
+}
+
+@media (min-width: 1158px){
+    .address .address-list {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .header .address-link {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+
+    .main-section {
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
+
+    .main-section .main-title {
+        margin-bottom: 48px;
+    }
+
+    .qualities-icon-container{
+        display: flex;
+    }
+
+    .qualities .qualities-list,
+    .team .team-list,
+    .portfolio .portfolio-list {
+        gap: 24px;
+    }
+
+    .qualities .qualities-item,
+    .team .team-card {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .portfolio .portfolio-card{
+        width: calc((100% - 48px) / 3);
+    }
+
+    .footer-container {
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+    
+    .footer-first-section{
+        margin-right: 180px;
+    }
+
+    .footer-socials{
+        margin-right: 80px;
     }
 }

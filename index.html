@@ -38,7 +38,8 @@
 
                     <button
                         type="menu"
-                        class="menu-btn">
+                        class="menu-btn"
+                        id="menu-btn">
                         <svg
                             class="menu-icon"
                             width="24"
@@ -47,10 +48,13 @@
                         </svg>
                     </button>
 
-                    <div class="menu-window">
+                    <div
+                        class="menu-window"
+                        id="menu-window">
                         <button
                             type="button"
-                            class="menu-close-btn">
+                            class="menu-close-btn"
+                            id="menu-close-btn">
                             <svg
                                 class="icon-cross"
                                 width="8"
@@ -176,7 +180,8 @@
 
                     <button
                         type="button"
-                        class="main-btn">
+                        class="main-btn"
+                        id="main-btn">
                         Order Service
                     </button>
                 </div>
@@ -860,11 +865,14 @@
             </div>
         </footer>
 
-        <div class="modal-window">
+        <div
+            class="modal-window hidden"
+            id="modal-window">
             <div class="modal">
                 <button
                     type="button"
-                    class="modal-close-btn">
+                    class="modal-close-btn"
+                    id="modal-close-btn">
                     <svg
                         class="icon-cross"
                         width="8"
@@ -990,5 +998,7 @@
                 </form>
             </div>
         </div>
+
+        <script src="./js/index.js"></script>
     </body>
 </html>
